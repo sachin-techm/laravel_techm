@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: https://staging.kshetrapati.info/admin
+Disallow: https://kshetrapati.info/admin
+Allow: https://staging.kshetrapati.info
+Allow: https://kshetrapati.info
