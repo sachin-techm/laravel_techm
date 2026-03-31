@@ -290,5 +290,19 @@ Route::prefix('admin')->name('admin.')->group(function () {
                 Route::get('delete/{id}',   'ScheduleController@delete')->name('delete');
             });
         });
+
+        // Post routes
+        Route::group(['prefix' => 'post', 'middleware' => ['AdminPermissionCheck:PostController']], function(){
+            Route::group(['namespace' => 'App\Http\Controllers\Admin', 'as' => 'post.'], function(){
+                Route::get('list/',         'PostController@index')->name('index');
+                Route::post('fetch-data/',  'PostController@fetchData')->name('fetch.data');
+                Route::get('create/',       'PostController@create')->name('create');
+                Route::post('store/',       'PostController@store')->name('store');
+                Route::get('show/{id}',     'PostController@show')->name('show');
+                Route::get('edit/{id}',     'PostController@edit')->name('edit');
+                Route::put('update/{id}',   'PostController@update')->name('update');
+                Route::get('delete/{id}',   'PostController@delete')->name('delete');
+            });
+        });
     });
 });

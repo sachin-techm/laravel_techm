@@ -11,7 +11,7 @@
             <input type="hidden" name="_method" value="PUT">
             <input type="hidden" name="id" value="{{$row->id}}">
             {{ csrf_field() }}
-            @include('admin.'.$moduleConfig['viewFolder'].'.forms.form');
+            @include('admin.'.$moduleConfig['viewFolder'].'.forms.form')
         </form>
     </div>
 </div>

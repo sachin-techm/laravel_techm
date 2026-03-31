@@ -10,7 +10,7 @@
         <form action="{{ route($moduleConfig['routes']['storeRoute']) }}" method="POST" enctype="multipart/form-data">
 
          	{{ csrf_field() }}
-            @include('admin.'.$moduleConfig['viewFolder'].'.forms.form');
+            @include('admin.'.$moduleConfig['viewFolder'].'.forms.form')
 
         </form>
 	</div>

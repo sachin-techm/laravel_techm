@@ -4,8 +4,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div>
-            <img src="{{asset('assets/frontend/images/RCLS_logo.png')}}" height="250px;">
-            <!-- <h1>Welcome to My Website</h1> -->
+            <!-- <img src="{{asset('assets/frontend/images/RCLS_logo.png')}}" height="250px;"> -->
+            <h1>Way Towards Innovative, Efficient & <br>Smart Digital Solutions</h1>
             <p>The 2024 Edition was a massive success and we now look forward to the 2025 Edition. <br/>In case of any interest, please get in touch with us.</p>
         </div>
     </section>

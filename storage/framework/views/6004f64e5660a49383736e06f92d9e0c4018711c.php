@@ -12,7 +12,7 @@
             <input type="hidden" name="id" value="<?php echo e($row->id); ?>">
             <?php echo e(csrf_field()); ?>
 
-            <?php echo $__env->make('admin.'.$moduleConfig['viewFolder'].'.forms.form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>;
+            <?php echo $__env->make('admin.'.$moduleConfig['viewFolder'].'.forms.form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         </form>
     </div>
 </div>
