@@ -39,6 +39,10 @@
                 <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
             </li>
 
+            @if(\Helper::isSuperAdmin('PostController', $rolePermissionArr))
+                @include('admin/includes/sidebar/post')
+            @endif
+
             @if(\Helper::isSuperAdmin('UserController', $rolePermissionArr))
                 @include('admin/includes/sidebar/user')
             @endif

@@ -39,6 +39,10 @@
                 <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
             </li>
 
+            <?php if(\Helper::isSuperAdmin('PostController', $rolePermissionArr)): ?>
+                <?php echo $__env->make('admin/includes/sidebar/post', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            <?php endif; ?>
+
             <?php if(\Helper::isSuperAdmin('UserController', $rolePermissionArr)): ?>
                 <?php echo $__env->make('admin/includes/sidebar/user', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             <?php endif; ?>

@@ -118,8 +118,8 @@ class PostController extends Controller
         $post->status             = $request->input('status', 0);
         $post->created_by         = Auth::user()->id;
 
-        if ($request->hasFile('image')) {
-            $image         = $request->file('image');
+        if ($request->hasFile('feature_image')) {
+            $image         = $request->file('feature_image');
             $fileName      = ImageUploadHelper::uploadImage(self::$moduleConfig['imageUploadFolder'], $image, $request->input('name'), 1000, 600, true);
             $post->image  = $fileName;
         }
@@ -171,8 +171,8 @@ class PostController extends Controller
         $post->status             = $request->input('status', 0);
         $post->updated_by         = Auth::user()->id;
 
-        if ($request->hasFile('image')) {
-            $image         = $request->file('image');
+        if ($request->hasFile('feature_image')) {
+            $image         = $request->file('feature_image');
             $fileName      = ImageUploadHelper::uploadImage(self::$moduleConfig['imageUploadFolder'], $image, $request->input('name'), 1000, 600, true);
             $post->image  = $fileName;
         }
