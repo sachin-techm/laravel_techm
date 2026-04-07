@@ -86,10 +86,10 @@
 				}
 			},
 			{
-                field: "image",
+                field: "feature_image",
                 title: "Image",
                 template: function(t) {
-                    return ( typeof t?.image != 'undefined' && t?.image)? '<img src="'+__BASE_URL_JS__+"uploads/posts/thumbnails/250/"+t?.image+'" style="height:50px" />' : 'N/A';
+                    return ( typeof t?.feature_image != 'undefined' && t?.feature_image)? '<img src="'+__BASE_URL_JS__+"uploads/posts/thumbnails/250/"+t?.feature_image+'" style="height:50px" />' : 'N/A';
                 }
             },
 			{
