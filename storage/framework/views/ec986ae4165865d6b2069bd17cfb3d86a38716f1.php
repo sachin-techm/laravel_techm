@@ -7,10 +7,13 @@
     <meta name="description" content="<?php echo e(@$metaData['description'] ?? ''); ?>">
     <meta name="keywords" content="<?php echo e(@$metaData['keywords'] ?? ''); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
     <link href="<?php echo e(asset('/uploads/admins/favicons/thumbnails/250/'.$adminSettings->favicon)); ?>" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="<?php echo e(asset('/assets/frontend/css/style.css')); ?>">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <?php echo $__env->yieldPushContent('styles'); ?>
 </head>

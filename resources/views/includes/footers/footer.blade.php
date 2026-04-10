@@ -4,7 +4,7 @@
         <!-- Left Section -->
         <div class="footer-col">
             <img src="http://localhost/laravel_techm/assets/frontend/images/footer-logo.png" style="height:48px;">
-            <p>
+            <p class="mt-4">
                 TechMistriz is a group of technology enthusiasts and entrepreneurs 
                 who are thriving to make a difference by serving in the world of web technology.
             </p>
@@ -48,6 +48,6 @@
     </div>
 
     <div class="footer-bottom">
-        © 2024 All rights reserved.
+        © 2026 All rights reserved.
     </div>
 </footer>

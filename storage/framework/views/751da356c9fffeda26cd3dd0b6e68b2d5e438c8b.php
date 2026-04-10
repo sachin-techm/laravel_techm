@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <section class="hero-section d-flex align-items-center text-white">
     
     <div class="here-section-inner"></div>
@@ -16,7 +16,7 @@
             
             <!-- Left Image -->
             <div class="col-md-6">
-                <img src="{{ asset('assets/frontend/images/software-engineers-working-on-project-4.webp') }}" 
+                <img src="<?php echo e(asset('assets/frontend/images/software-engineers-working-on-project-4.webp')); ?>" 
                      class="img-fluid rounded" 
                      alt="About Image">
             </div>
@@ -93,19 +93,19 @@
     <p class="text-center">Get various articles and blog on multiple services here.</p>
     <div class="blog-grid">
       <div class="blog-card">
-        <img src="{{ asset('assets/frontend/images/about-us.webp') }}" alt="blog">
+        <img src="<?php echo e(asset('assets/frontend/images/about-us.webp')); ?>" alt="blog">
         <h4>WordPress Development Company in Noida</h4>
         <p>WordPress Development Company in Noida for Reliable and Scalable Website Solutions In today’s digital environment, businesses need more than...</p>
         <a href="#">Read More</a>
       </div>
       <div class="blog-card">
-        <img src="{{ asset('assets/frontend/images/about-us.webp') }}" alt="blog">
+        <img src="<?php echo e(asset('assets/frontend/images/about-us.webp')); ?>" alt="blog">
         <h4>SEO Company in Noida Sector 63</h4>
         <p>SEO Company in Noida Sector 63 for Strong and Consistent Digital Growth In today’s digital environment, businesses are constantly...</p>
         <a href="#">Read More</a>
       </div>
       <div class="blog-card">
-        <img src="{{ asset('assets/frontend/images/about-us.webp') }}" alt="blog">
+        <img src="<?php echo e(asset('assets/frontend/images/about-us.webp')); ?>" alt="blog">
         <h4>Best Web Design Company in Noida</h4>
         <p>Choose the Best Web Design Company in Noida for Long-Term Business Growth In today’s fast-moving digital environment, businesses are...</p>
         <a href="#">Read More</a>
@@ -113,9 +113,10 @@
     </div>
   </div>
 </section>
-@endsection
-@push('scripts')
+<?php $__env->stopSection(); ?>
+<?php $__env->startPush('scripts'); ?>
 <script type="text/javascript">    
 
 </script>
-@endpush
+<?php $__env->stopPush(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\laravel_techm\resources\views/frontend/about.blade.php ENDPATH**/ ?>

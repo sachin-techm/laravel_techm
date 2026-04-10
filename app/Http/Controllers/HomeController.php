@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Country;
 use App\Models\State;
 use App\Models\City;
+use App\Models\AboutUsSetting;
 use App\Traits\UserTrait;
 use Carbon\Carbon;
 
@@ -41,6 +42,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('frontend.home');
+    }
+
+    public function about()
+    {
+        $row = AboutUsSetting::where(['status' => 1, 'id' => 1])->first();
+
+        return view('frontend.about');
     }
 
 

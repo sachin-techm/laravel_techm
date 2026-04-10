@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,6 @@ Route::fallback(function () {
 
     return response()->view('errors.404', [], 404);
 });
+
+// TTM Route
+Route::get('/about', [HomeController::class, 'about'])->name('about');
